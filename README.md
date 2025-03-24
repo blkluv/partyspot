@@ -178,24 +178,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 - `db:generate`: Generates migration files based on schema changes.
 - `db:studio`: Launches the graphical interface for database management.
 
-## Folder Structure
-
-partyspot/
-├── src/ # Source code directory
-│ ├── components/ # Reusable React components
-│ │ ├── common/ # UI reusable components (buttons, inputs, etc.)
-│ │ └── features/ # Feature-specific components
-│ ├── db/ # Database configuration and models
-│ │ ├── migrations/ # Migrations
-│ │ ├── queries/ # Database queries
-│ │ └── schema.ts # Database schema
-│ ├── types/ # TypeScript type definitions
-│ ├── store/ # State management (Zustand)
-│ ├── data/ # Data fetching and management
-│ └── lib/ # Utilities and helper functions
-├── public/ # Static files
-└── ...
-
 ## Best Practices
 
 - Use Next.js server components when possible.
