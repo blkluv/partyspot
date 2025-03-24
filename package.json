@@ -9,7 +9,10 @@
     "lint": "next lint",
     "prepare": "husky",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "db:start": "docker-compose up -d",
+    "db:stop": "docker-compose down",
+    "db:reset": "docker-compose down -v && docker-compose up -d"
   },
   "dependencies": {
     "lucide-react": "^0.483.0",
