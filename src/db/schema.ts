@@ -1,10 +1,11 @@
-import "dotenv/config";
-import { drizzle } from "drizzle-orm/node-postgres";
+import { pgTable, serial, text, timestamp, varchar } from "drizzle-orm/pg-core";
 
-if (!process.env.DATABASE_URL) {
-  throw new Error("DATABASE URL is not set in the environment variables.");
-}
+export const testTable = pgTable("test_table", {
+  id: serial("id").primaryKey(),
+  name: varchar("name", { length: 255 }).notNull(),
+  description: text("description"),
+  createdAt: timestamp("created_at").defaultNow().notNull()
+});
 
-const db = drizzle(process.env.DATABASE_URL as string);
-
-export default db;
+export type TestTable = typeof testTable.$inferSelect;
+export type NewTestTable = typeof testTable.$inferInsert;
