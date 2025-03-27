@@ -20,10 +20,10 @@ export default function SearchInput({
   ...rest
 }: SearchInputProps) {
   return (
-    <div className="w-full flex-1 items-start justify-start px-4 py-3 text-left sm:px-7">
+    <div className="w-full flex-1 items-start justify-start px-6 py-4 text-left">
       <label
         htmlFor={id}
-        className="text-left text-xs font-medium text-gray-700 sm:text-sm"
+        className="text-left text-sm font-medium text-gray-700 sm:text-sm"
       >
         {label}
       </label>
@@ -34,7 +34,7 @@ export default function SearchInput({
           placeholder={placeholder}
           value={value}
           onChange={(e) => onChange?.(e.target.value)}
-          className="sm:text-md w-full truncate border-none bg-transparent text-sm font-bold text-black placeholder:font-normal focus:outline-none"
+          className="w-full truncate border-none bg-transparent text-base font-semibold text-black placeholder:font-normal focus:outline-none sm:text-lg"
           {...rest}
         />
         {icon && (

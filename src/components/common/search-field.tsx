@@ -11,7 +11,7 @@ export default function SearchField() {
 
   return (
     <form
-      className="flex w-full flex-col items-center rounded-lg border border-gray-100 bg-white p-1 text-black shadow-md sm:flex-row"
+      className="mx-auto flex w-full max-w-7xl flex-col items-center rounded-lg border border-gray-100 bg-white text-black shadow-lg sm:flex-row"
       role="search"
       aria-label="Búsqueda de lugares"
     >
@@ -47,10 +47,10 @@ export default function SearchField() {
       <button
         type="submit"
         aria-label="Buscar lugares"
-        className="bg-primary hover:bg-primary/90 mx-auto mt-2 flex w-full items-center justify-center gap-2 rounded-md px-5 py-3 shadow-sm transition-all duration-200 sm:mx-4 sm:mt-0 sm:w-auto"
+        className="bg-primary hover:bg-primary/90 mx-auto mt-3 flex w-full items-center justify-center gap-2 rounded-md px-6 py-3 shadow-sm transition-all duration-200 sm:mx-4 sm:mt-0 sm:w-auto"
       >
-        <Search className="h-4 w-4 text-white" aria-hidden="true" />
-        <span className="text-md font-semibold text-white">Buscar</span>
+        <Search className="size-4 text-white" aria-hidden="true" />
+        <span className="font-regular text-lg text-white">Buscar</span>
       </button>
     </form>
   );
