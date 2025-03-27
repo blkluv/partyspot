@@ -1,6 +1,7 @@
 import HeroIconList from "@/src/components/hero-section/hero-icon-list";
 import BackgroundPageContainer from "@/src/components/common/background-page-container";
 import SearchField from "@/src/components/common/search-field";
+import MobileSearchField from "@/src/components/common/mobile-search-field";
 import HeroText from "@/src/components/common/hero-text";
 
 export default function HeroSection() {
@@ -15,7 +16,14 @@ export default function HeroSection() {
           <span id="search-heading" className="sr-only">
             Busca eventos por actividad, ubicación y fecha
           </span>
-          <SearchField />
+          {/* Mobile search field */}
+          <div className="block lg:hidden">
+            <MobileSearchField />
+          </div>
+          {/* Desktop search field */}
+          <div className="hidden lg:block">
+            <SearchField />
+          </div>
         </div>
       </section>
     </BackgroundPageContainer>

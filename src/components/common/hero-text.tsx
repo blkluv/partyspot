@@ -8,7 +8,7 @@ export default function HeroText() {
 
   return (
     <h1 className="flex w-full flex-col items-center justify-center text-center text-3xl font-bold sm:text-4xl md:text-5xl lg:text-7xl">
-      <span className="text-center text-3xl font-bold sm:text-4xl md:text-5xl lg:text-7xl">
+      <span className="text-center text-4xl font-semibold sm:text-5xl md:text-6xl lg:text-7xl">
         <WaveUnderline>{highlight}</WaveUnderline>
         <br />
         {text}
