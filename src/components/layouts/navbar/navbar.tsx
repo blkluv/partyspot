@@ -23,14 +23,14 @@ const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center">
           <Link
             href="/"
-            className="flex items-center gap-2 transition-opacity hover:opacity-90"
+            className="flex items-center gap-1 transition-opacity hover:opacity-90 sm:gap-2"
           >
             <Image
               src={images.logo.icon}
               alt="PartySpot Logo"
               width={25}
               height={35}
-              className="h-auto w-6 md:w-7"
+              className="h-auto w-5 sm:w-6 md:w-7 lg:w-8"
               priority
             />
             <Image
@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({
               alt="PartySpot"
               width={70}
               height={60}
-              className="h-auto w-16 md:w-[70px]"
+              className="h-auto w-14 sm:w-16 md:w-[70px] lg:w-[80px]"
               priority
             />
           </Link>
