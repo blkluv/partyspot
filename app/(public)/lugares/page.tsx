@@ -17,7 +17,7 @@ export default function LugaresPage() {
       </div>
 
       {/* Grid of spots */}
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+      <div className="grid grid-cols-1 gap-6 space-y-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         {lugares.map((lugar) => (
           <SpotCard key={lugar.id} {...lugar} />
         ))}

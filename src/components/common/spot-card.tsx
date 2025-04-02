@@ -23,7 +23,7 @@ export function SpotCard({
     // TODO: Add link to spot page
     <div className="group relative flex cursor-pointer flex-col overflow-hidden">
       {/* Image Container */}
-      <div className="relative aspect-square w-full overflow-hidden">
+      <div className="relative aspect-[4/2] w-full overflow-hidden sm:aspect-[4/3]">
         <Image
           src={imageUrl}
           alt={title}
