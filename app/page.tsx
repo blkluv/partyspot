@@ -12,14 +12,12 @@ const Home: NextPage = () => {
   return (
     <>
       <Navbar />
-      <main id="main-content">
-        <HeroSection />
-        <FeaturedSpotsSection />
-        <NextParty />
-        <MadeWithPartySpotSection />
-        <WhyUsePartySpot />
-        <BecomeHostSection />
-      </main>
+      <HeroSection />
+      <FeaturedSpotsSection />
+      <NextParty />
+      <MadeWithPartySpotSection />
+      <WhyUsePartySpot />
+      <BecomeHostSection />
       <Footer />
     </>
   );

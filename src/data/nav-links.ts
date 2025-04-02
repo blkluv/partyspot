@@ -9,7 +9,7 @@ export const navLinks: NavLink[] = [
   {
     id: "explore",
     label: "Explorar Spots",
-    href: "/explore"
+    href: "/lugares"
   },
   {
     id: "create",

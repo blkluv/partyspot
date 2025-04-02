@@ -42,7 +42,7 @@ export default function RootLayout({
         <body
           className={`${gabarito.className} flex min-h-screen flex-col antialiased`}
         >
-          <main className="flex-grow">{children}</main>
+          <main>{children}</main>
         </body>
       </html>
     </ClerkProvider>
