@@ -20,14 +20,15 @@ export function SpotCard({
   imageUrl
 }: SpotCardProps) {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-lg">
+    // TODO: Add link to spot page
+    <div className="group relative flex cursor-pointer flex-col overflow-hidden">
       {/* Image Container */}
-      <div className="relative aspect-[4/3] w-full overflow-hidden">
+      <div className="relative aspect-square w-full overflow-hidden">
         <Image
           src={imageUrl}
           alt={title}
           fill
-          className="rounded-md object-cover transition-transform duration-500 group-hover:scale-105"
+          className="rounded-xl object-cover transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
 
@@ -60,7 +61,7 @@ export function SpotCard({
           </span>
           <span className="ml-1 text-sm text-gray-500">/h</span>
           <div className="ml-2 flex items-center text-sm">
-            <Star size={14} className="fill-yellow-400 text-yellow-400" />
+            <Star size={14} className="fill-primary text-primary" />
             <span className="ml-1 font-medium text-gray-700">
               {rating.toFixed(1)}
             </span>

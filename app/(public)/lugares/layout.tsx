@@ -12,7 +12,9 @@ export default function LugaresLayout({
   return (
     <>
       {/* <Navbar /> */}
-      <main className={`${inter.className} container mx-auto`}>{children}</main>
+      <main className={`${inter.className} mx-auto px-4 sm:px-6 lg:px-16`}>
+        {children}
+      </main>
       {/* <Footer /> */}
     </>
   );
