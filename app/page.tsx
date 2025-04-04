@@ -7,11 +7,14 @@ import WhyUsePartySpot from "@/src/components/why-use-ps-section/why-use-party-s
 import BecomeHostSection from "@/src/components/become-host-section/become-host";
 import NextParty from "@/src/components/cta-next-party/cta-next-party";
 import Footer from "@/src/components/layouts/footer/footer";
+import NavLinks from "@/src/components/layouts/navbar/nav-links";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Navbar />
+      <Navbar>
+        <NavLinks />
+      </Navbar>
       <HeroSection />
       <FeaturedSpotsSection />
       <NextParty />
