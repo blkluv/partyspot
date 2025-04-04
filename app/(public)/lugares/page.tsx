@@ -4,9 +4,9 @@ import { ShowMap } from "@/src/components/common/show-map";
 
 export default function LugaresPage() {
   return (
-    <section className="mx-auto px-4 py-8">
+    <>
       {/* Header with count and filter */}
-      <div className="mb-6 flex items-center justify-between">
+      <div className="my-6 flex items-center justify-between">
         <h1 className="text-xl font-semibold text-gray-900">
           Viendo 1-24 de +10000 spots para &ldquo;Solo estoy viendo&rdquo; en
           S.M. de Tucumán, Argentina.
@@ -20,6 +20,6 @@ export default function LugaresPage() {
           <SpotCard key={lugar.id} {...lugar} />
         ))}
       </div>
-    </section>
+    </>
   );
 }

@@ -4,14 +4,14 @@ import { ChevronDown, Calendar, Search, MapPin } from "lucide-react";
 import { useState } from "react";
 import SearchInput from "./search-input";
 
-export default function SearchField() {
+export default function SearchField({ className = "" }) {
   const [activity, setActivity] = useState("Solo estoy viendo");
   const [location, setLocation] = useState("En cualquier lugar");
   const [date, setDate] = useState("En cualquier momento");
 
   return (
     <form
-      className="mx-auto flex w-full max-w-7xl flex-col items-center rounded-lg border border-gray-100 bg-white text-black shadow-lg sm:flex-row"
+      className={`mx-auto flex w-full max-w-7xl flex-col items-center rounded-lg border border-gray-100 bg-white text-black shadow-lg sm:flex-row ${className}`}
       role="search"
       aria-label="Búsqueda de lugares"
     >
