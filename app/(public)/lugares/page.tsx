@@ -1,5 +1,6 @@
 import { lugares } from "@/src/data/lugares";
 import { SpotCard } from "@/src/components/common/spot-card";
+import { ShowMap } from "@/src/components/common/show-map";
 
 export default function LugaresPage() {
   return (
@@ -10,10 +11,7 @@ export default function LugaresPage() {
           Viendo 1-24 de +10000 spots para &ldquo;Solo estoy viendo&rdquo; en
           S.M. de Tucumán, Argentina.
         </h1>
-        <button className="flex items-center gap-1 rounded-full border border-gray-300 px-3 py-1.5 text-sm">
-          Mostrar mapa
-          <span className="ml-1 inline-block h-3 w-3 rounded-full bg-pink-500"></span>
-        </button>
+        <ShowMap />
       </div>
 
       {/* Grid of spots */}
