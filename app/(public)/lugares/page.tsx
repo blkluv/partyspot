@@ -27,7 +27,7 @@ export default function LugaresPage() {
           Viendo 1-24 de +10000 spots para &ldquo;Solo estoy viendo&rdquo; en
           S.M. de Tucumán, Argentina.
         </h1>
-        <div className="mt-2 md:mt-0">
+        <div className="hidden md:mt-0 md:block">
           <ShowMap />
         </div>
       </div>
