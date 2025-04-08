@@ -21,6 +21,13 @@ export const ShowMap = () => {
           className={`relative inline-flex h-6 w-11 flex-shrink-0 items-center rounded-full p-0.5 transition-colors duration-200 ease-in-out ${
             showMap ? "bg-primary" : "bg-gray-200"
           }`}
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              setShowMap(!showMap);
+            }
+          }}
         >
           {/* Toggle slider */}
           <span
