@@ -5,7 +5,7 @@ import { socialLinks, footerSections } from "@/src/data/footer";
 export default function Footer() {
   return (
     <footer className="border-t border-gray-200 bg-white py-8">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-4">
         {/* Footer */}
         <div className="mb-8 flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0">
           {/* Logo and Copyright */}

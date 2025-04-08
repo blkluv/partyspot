@@ -8,6 +8,7 @@ export interface NavLink {
 }
 
 export interface NavbarProps {
+  children?: React.ReactNode;
   className?: string;
   onMenuToggle?: () => void;
   onProfileClick?: () => void;

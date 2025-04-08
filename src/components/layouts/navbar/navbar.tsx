@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/src/data/images";
 import type { NavbarProps } from "@/src/types";
-import NavLinks from "./nav-links";
 import MobileMenu from "./mobile-menu";
 import { SignInButton } from "@clerk/nextjs";
 import { SignUpButton } from "@clerk/nextjs";
@@ -11,14 +10,14 @@ import { SignedOut } from "@clerk/nextjs";
 import { UserButton } from "@clerk/nextjs";
 import { SignedIn } from "@clerk/nextjs";
 
-const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
+const Navbar: React.FC<NavbarProps> = ({ className = "", children }) => {
   return (
     <header
       className={`fixed z-50 w-full bg-white shadow-md transition-all duration-300 ${className}`}
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="mx-auto grid h-16 max-w-7xl grid-cols-2 items-center px-4 sm:px-6 md:h-20 md:grid-cols-[1fr_auto_1fr] lg:px-8">
+      <div className="container mx-auto grid h-16 grid-cols-2 items-center px-4 md:h-20 md:grid-cols-[1fr_auto_1fr] lg:px-4">
         {/* Logo Section - Left */}
         <div className="flex items-center">
           <Link
@@ -45,9 +44,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "" }) => {
         </div>
 
         {/* Navigation Links - Center */}
-        <div className="mx-4 hidden md:block">
-          <NavLinks />
-        </div>
+        <div className="mx-4 hidden md:block">{children}</div>
 
         {/* User Actions - Right */}
         <div className="flex items-center justify-end">

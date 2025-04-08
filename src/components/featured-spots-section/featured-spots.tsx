@@ -12,11 +12,14 @@ export default function FeaturedSpotsSection() {
             Lugares destacados
           </h2>
           <Link
-            href="/spots"
+            href="/lugares"
             className="text-secondary hover:text-secondary/80 font-medium transition-colors"
+            title="Explora todos los lugares destacados"
+            aria-label="Ver todos los lugares destacados disponibles"
           >
             <span className="sm:text-md flex items-center gap-1 text-sm sm:gap-2 xl:text-lg">
-              Ver todos <ChevronRightIcon className="h-3 w-3 sm:h-4 sm:w-4" />
+              Ver todos los lugares{" "}
+              <ChevronRightIcon className="h-3 w-3 sm:h-4 sm:w-4" />
             </span>
           </Link>
         </div>
