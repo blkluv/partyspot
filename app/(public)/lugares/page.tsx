@@ -2,13 +2,15 @@ import { lugares } from "@/src/data/lugares";
 import { SpotCard } from "@/src/components/common/spot-card";
 import { ShowMap } from "@/src/components/common/show-map";
 import SearchBar from "@/src/components/common/search-bar";
+import Ammenities from "./ammenities";
 
 export default function LugaresPage() {
   return (
     <>
       {/* Header with count and filter */}
-      <div className="my-6 flex items-center justify-between">
-        <SearchBar placeholder="Buscar lugares" />
+      <div className="my-6 flex items-center justify-start gap-16">
+        <SearchBar placeholder="Buscar lugares" className="w-full" />
+        <Ammenities />
       </div>
       <div className="my-6 flex items-center justify-between">
         <h1 className="text-xl font-semibold text-gray-900">

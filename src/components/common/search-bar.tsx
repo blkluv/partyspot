@@ -26,7 +26,7 @@ function SearchBar({ placeholder, className }: SearchBarProps) {
   };
 
   return (
-    <div className={cn("relative", className)}>
+    <div className={cn(className)}>
       <div className="relative">
         <label htmlFor="search" className="sr-only">
           Search
