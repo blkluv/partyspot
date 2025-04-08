@@ -20,7 +20,7 @@ const buttonVariants = {
 };
 
 const buttonSizes = {
-  default: "h-10 px-4 py-2 rounded-md text-base font-medium has-[>svg]:px-3",
+  default: "h-11 px-4 py-2 rounded-md text-base font-medium has-[>svg]:px-3",
   sm: "h-8 rounded-md px-3 text-sm font-medium gap-1.5 has-[>svg]:px-2.5",
   lg: "h-14 rounded-md px-6 text-lg font-medium has-[>svg]:px-4",
   icon: "size-10 rounded-md p-2.5"

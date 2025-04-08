@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ className = "", children }) => {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="mx-auto grid h-16 max-w-7xl grid-cols-2 items-center px-4 sm:px-6 md:h-20 md:grid-cols-[1fr_auto_1fr] lg:px-8">
+      <div className="container mx-auto grid h-16 grid-cols-2 items-center px-4 md:h-20 md:grid-cols-[1fr_auto_1fr] lg:px-4">
         {/* Logo Section - Left */}
         <div className="flex items-center">
           <Link
