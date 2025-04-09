@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import PartySpotLogoWithText from "@/src/components/common/ps-logo";
-import { SignUpForm } from "@/src/components/auth";
+import PartySpotLogoWithText from "@/components/common/ps-logo";
+import { SignUpForm } from "@/components/auth";
 
 export default function SignUpPage() {
   return (

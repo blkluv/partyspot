@@ -1,4 +1,4 @@
-import { heroSectionByIconSelected } from "@/src/data/hero-section-by-icon-selected";
+import { heroSectionByIconSelected } from "@/data/hero-section-by-icon-selected";
 import { LucideIcon } from "lucide-react";
 
 export interface HeroSlice {

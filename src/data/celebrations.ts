@@ -1,4 +1,4 @@
-import { CelebrationOption } from "@/src/types";
+import { CelebrationOption } from "@/types";
 
 export const celebrationOptions: CelebrationOption[] = [
   { value: "wedding", label: "Boda" },

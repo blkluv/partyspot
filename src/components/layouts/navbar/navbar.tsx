@@ -1,28 +1,31 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { images } from "@/src/data/images";
-import type { NavbarProps } from "@/src/types";
+import { images } from "@/data/images";
+import type { NavbarProps } from "@/types";
 import MobileMenu from "./mobile-menu";
-import { SignInButton } from "@clerk/nextjs";
-import { SignUpButton } from "@clerk/nextjs";
-import { SignedOut } from "@clerk/nextjs";
-import { UserButton } from "@clerk/nextjs";
-import { SignedIn } from "@clerk/nextjs";
+import {
+  SignInButton,
+  SignUpButton,
+  SignedOut,
+  UserButton,
+  SignedIn
+} from "@clerk/nextjs";
 
 const Navbar: React.FC<NavbarProps> = ({ className = "", children }) => {
   return (
     <header
-      className={`fixed z-50 w-full bg-white shadow-md transition-all duration-300 ${className}`}
+      className={`w-full border-b border-gray-200 bg-white ${className}`}
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="container mx-auto grid h-16 grid-cols-2 items-center px-4 md:h-20 md:grid-cols-[1fr_auto_1fr] lg:px-4">
+      <div className="container mx-auto grid grid-cols-2 items-center px-4 md:h-20 md:grid-cols-[1fr_auto_1fr] lg:px-4">
         {/* Logo Section - Left */}
         <div className="flex items-center">
           <Link
             href="/"
             className="flex items-center gap-1 transition-opacity hover:opacity-90 sm:gap-2"
+            aria-label="PartySpot Home"
           >
             <Image
               src={images.logo.icon}
@@ -47,10 +50,14 @@ const Navbar: React.FC<NavbarProps> = ({ className = "", children }) => {
         <div className="mx-4 hidden md:block">{children}</div>
 
         {/* User Actions - Right */}
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-end gap-2">
           <SignedOut>
-            <SignInButton />
-            <SignUpButton />
+            <SignInButton mode="modal">
+              <button className="navbar-link">Iniciar sesión</button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <button className="navbar-link-active">Registrarse</button>
+            </SignUpButton>
           </SignedOut>
           <SignedIn>
             <UserButton />

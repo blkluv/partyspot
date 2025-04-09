@@ -1,7 +1,7 @@
 "use client";
-import { PartyOption, PartyType } from "@/src/types/party";
+import { PartyOption, PartyType } from "@/types/party";
 import React from "react";
-import { useStore } from "@/src/store";
+import { useStore } from "@/store";
 
 interface PartyOptionButtonProps {
   option: PartyOption;

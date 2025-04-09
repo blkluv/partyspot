@@ -1,8 +1,8 @@
 "use client";
 import { SearchIcon, XIcon } from "lucide-react";
-import { useDebounce } from "@/src/lib/hooks/use-debounce";
+import { useDebounce } from "@/lib/hooks/use-debounce";
 import { useEffect, useState } from "react";
-import { cn } from "@/src/lib/utils/cn";
+import { cn } from "@/lib/utils/cn";
 
 interface SearchBarProps {
   placeholder: string;

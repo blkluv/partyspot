@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { socialLinks, footerSections } from "@/src/data/footer";
+import { socialLinks, footerSections } from "@/data/footer";
 
 export default function Footer() {
   return (

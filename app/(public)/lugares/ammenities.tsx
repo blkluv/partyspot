@@ -1,6 +1,6 @@
-import Button from "@/src/components/common/button";
-import { Slider } from "@/src/components/common/slider";
-import { ammenities } from "@/src/data/ammenities";
+import Button from "@/components/common/button";
+import { Slider } from "@/components/common/slider";
+import { ammenities } from "@/data/ammenities";
 
 function Ammenities() {
   return (

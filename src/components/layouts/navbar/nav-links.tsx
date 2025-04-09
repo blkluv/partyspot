@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { navLinks } from "@/src/data/nav-links";
-import { useStore } from "@/src/store";
+import { navLinks } from "@/data/nav-links";
+import { useStore } from "@/store";
 
 interface NavLinksProps {
   isMobile?: boolean;

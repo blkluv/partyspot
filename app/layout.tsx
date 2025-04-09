@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Gabarito } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import Navbar from "@/src/components/layouts/navbar/navbar";
-import NavLinks from "@/src/components/layouts/navbar/nav-links";
-import Footer from "@/src/components/layouts/footer/footer";
 
 const gabarito = Gabarito({
   variable: "--font-gabarito",
@@ -41,16 +38,8 @@ export default function RootLayout({
         }
       }}
     >
-      <html lang="es">
-        <body
-          className={`${gabarito.className} flex min-h-screen flex-col antialiased`}
-        >
-          <Navbar>
-            <NavLinks />
-          </Navbar>
-          <main>{children}</main>
-          <Footer />
-        </body>
+      <html suppressHydrationWarning lang="es" className="scroll-smooth">
+        <body className={`${gabarito.className}`}>{children}</body>
       </html>
     </ClerkProvider>
   );

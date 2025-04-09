@@ -1,7 +1,7 @@
 "use client";
-import { FeatureItemProps } from "@/src/data/feature-items";
-import { useStore } from "@/src/store";
-import CommonFeatureItem from "@/src/components/common/feature-item";
+import { FeatureItemProps } from "@/data/feature-items";
+import { useStore } from "@/store";
+import CommonFeatureItem from "@/components/common/feature-item";
 
 export default function FeatureItem({
   title,

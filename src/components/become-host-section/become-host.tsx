@@ -1,8 +1,8 @@
-import LinkButton from "@/src/components/common/link-button";
-import FeatureItem from "@/src/components/common/feature-item";
-import BackgroundCard from "@/src/components/common/background-card";
-import ContentImageGrid from "@/src/components/common/content-image-grid";
-import { features } from "@/src/data/become-a-host";
+import LinkButton from "@/components/common/link-button";
+import FeatureItem from "@/components/common/feature-item";
+import BackgroundCard from "@/components/common/background-card";
+import ContentImageGrid from "@/components/common/content-image-grid";
+import { features } from "@/data/become-a-host";
 import Image from "next/image";
 
 export default function BecomeHostSection() {

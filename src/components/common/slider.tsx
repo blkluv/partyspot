@@ -4,7 +4,7 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import Button from "./button";
-import { cn } from "@/src/lib/utils/cn";
+import { cn } from "@/lib/utils/cn";
 
 interface SliderProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;

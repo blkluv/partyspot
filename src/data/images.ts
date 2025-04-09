@@ -1,4 +1,4 @@
-import { ImageItem } from "@/src/types";
+import { ImageItem } from "@/types";
 import { MenuIcon, UserIcon } from "lucide-react";
 
 export const images: ImageItem = {

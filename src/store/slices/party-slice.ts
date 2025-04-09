@@ -1,5 +1,5 @@
-import { PartyType } from "@/src/types/party";
-import { partyOptions } from "@/src/data/party-options";
+import { PartyType } from "@/types/party";
+import { partyOptions } from "@/data/party-options";
 import { StateCreator } from "zustand";
 
 export interface PartySlice {

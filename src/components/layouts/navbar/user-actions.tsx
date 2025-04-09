@@ -1,6 +1,6 @@
 "use client";
-import { images } from "@/src/data/images";
-import { useStore } from "@/src/store";
+import { images } from "@/data/images";
+import { useStore } from "@/store";
 
 interface UserActionsProps {
   onMenuToggle?: () => void;

@@ -1,8 +1,8 @@
-import HeroIconList from "@/src/components/hero-section/hero-icon-list";
-import BackgroundPageContainer from "@/src/components/common/background-page-container";
-import SearchField from "@/src/components/common/search-field";
-import MobileSearchField from "@/src/components/common/mobile-search-field";
-import HeroText from "@/src/components/common/hero-text";
+import HeroIconList from "@/components/hero-section/hero-icon-list";
+import BackgroundPageContainer from "@/components/common/background-page-container";
+import SearchField from "@/components/common/search-field";
+import MobileSearchField from "@/components/common/mobile-search-field";
+import HeroText from "@/components/common/hero-text";
 
 export default function HeroSection() {
   return (

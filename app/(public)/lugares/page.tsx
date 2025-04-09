@@ -1,9 +1,9 @@
-import { lugares } from "@/src/data/lugares";
-import { SpotCard } from "@/src/components/common/spot-card";
-import { ShowMap } from "@/src/components/common/show-map";
-import SearchBar from "@/src/components/common/search-bar";
+import { lugares } from "@/data/lugares";
+import { SpotCard } from "@/components/common/spot-card";
+import { ShowMap } from "@/components/common/show-map";
+import SearchBar from "@/components/common/search-bar";
 import Ammenities from "./ammenities";
-import Button from "@/src/components/common/button";
+import Button from "@/components/common/button";
 import { FilterIcon } from "lucide-react";
 
 export default function LugaresPage() {
@@ -33,7 +33,7 @@ export default function LugaresPage() {
       </div>
 
       {/* Grid of spots */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 xl:grid-cols-5">
+      <div className="my-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:my-6 md:gap-6 lg:grid-cols-3 xl:grid-cols-5">
         {lugares.map((lugar) => (
           <SpotCard key={lugar.id} {...lugar} />
         ))}

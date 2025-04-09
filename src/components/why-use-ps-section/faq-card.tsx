@@ -1,6 +1,6 @@
-import BackgroundCard from "@/src/components/common/background-card";
+import BackgroundCard from "@/components/common/background-card";
 import LeftSideImage from "./left-side-image";
-import { featureItems } from "@/src/data/feature-items";
+import { featureItems } from "@/data/feature-items";
 import FeatureItem from "./extended-feature-item";
 
 export default function FaqCard() {

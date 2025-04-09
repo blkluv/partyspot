@@ -1,6 +1,6 @@
 "use client";
-import { useStore } from "@/src/store";
-import { heroSectionByIconSelected } from "@/src/data/hero-section-by-icon-selected";
+import { useStore } from "@/store";
+import { heroSectionByIconSelected } from "@/data/hero-section-by-icon-selected";
 
 export default function HeroIconList() {
   const currentIcon = useStore((state) => state.currentIcon);

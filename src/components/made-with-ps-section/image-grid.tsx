@@ -1,7 +1,7 @@
 "use client";
 
-import { madeWithPSImages } from "@/src/data/made-with-ps-images";
-import ImageSlider from "@/src/components/made-with-ps-section/image-slider";
+import { madeWithPSImages } from "@/data/made-with-ps-images";
+import ImageSlider from "@/components/made-with-ps-section/image-slider";
 
 export default function ImageGrid() {
   const tripleImages = [

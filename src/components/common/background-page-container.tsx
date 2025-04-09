@@ -1,5 +1,5 @@
 "use client";
-import { useStore } from "@/src/store";
+import { useStore } from "@/store";
 
 interface BackgroundPageContainerProps {
   children: React.ReactNode;

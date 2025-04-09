@@ -1,6 +1,6 @@
 "use client";
 import { PartyOptionButton } from "./party-option-button";
-import { partyOptions } from "@/src/data/party-options";
+import { partyOptions } from "@/data/party-options";
 
 export const PartyButtons = () => {
   return (

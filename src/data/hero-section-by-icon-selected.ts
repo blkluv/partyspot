@@ -1,4 +1,4 @@
-import { HeroSectionByIconSelected } from "@/src/types";
+import { HeroSectionByIconSelected } from "@/types";
 import { House, Cake, GraduationCap, Heart } from "lucide-react";
 
 export const heroSectionByIconSelected: HeroSectionByIconSelected[] = [

@@ -1,5 +1,5 @@
 "use client";
-import { useStore } from "@/src/store";
+import { useStore } from "@/store";
 import React from "react";
 import Image from "next/image";
 

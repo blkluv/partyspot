@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import PartySpotLogoWithText from "@/src/components/common/ps-logo";
+import PartySpotLogoWithText from "@/components/common/ps-logo";
 
 export default function ForgotPasswordPage() {
   return (

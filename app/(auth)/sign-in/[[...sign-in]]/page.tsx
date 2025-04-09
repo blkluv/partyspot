@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { SignInForm } from "@/src/components/auth";
-import PartySpotLogoWithText from "@/src/components/common/ps-logo";
+import { SignInForm } from "@/components/auth";
+import PartySpotLogoWithText from "@/components/common/ps-logo";
 
 export default function SignInPage() {
   return (

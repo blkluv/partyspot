@@ -1,6 +1,6 @@
 import Link from "next/link";
 import FeaturedSpotsCard from "./featured-spotscard";
-import { spots } from "@/src/data/spots";
+import { spots } from "@/data/spots";
 import { ChevronRightIcon } from "lucide-react";
 
 export default function FeaturedSpotsSection() {

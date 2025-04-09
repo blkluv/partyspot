@@ -1,4 +1,4 @@
-import { PartyOption } from "@/src/types/party";
+import { PartyOption } from "@/types/party";
 
 export const partyOptions: PartyOption[] = [
   {

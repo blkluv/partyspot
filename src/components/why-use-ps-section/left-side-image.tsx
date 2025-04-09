@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { useStore } from "@/src/store";
+import { useStore } from "@/store";
 
 export default function LeftSideImage() {
   const selectedBackgroundUrl = useStore(
