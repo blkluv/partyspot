@@ -8,7 +8,7 @@ export default function LugaresLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className={`${inter.className} px-4 sm:px-6 lg:px-16`}>
+    <section className={`${inter.className} my-24 px-4 sm:px-6 lg:px-16`}>
       {children}
     </section>
   );

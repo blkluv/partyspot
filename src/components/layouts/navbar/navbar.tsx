@@ -15,11 +15,11 @@ import {
 const Navbar: React.FC<NavbarProps> = ({ className = "", children }) => {
   return (
     <header
-      className={`w-full border-b border-gray-200 bg-white ${className}`}
+      className={`fixed top-0 right-0 left-0 z-50 w-full border-b border-gray-200 bg-white ${className}`}
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="container mx-auto grid grid-cols-2 items-center px-4 md:h-20 md:grid-cols-[1fr_auto_1fr] lg:px-4">
+      <div className="container mx-auto grid grid-cols-2 items-center px-4 py-2 md:grid-cols-[1fr_auto_1fr] lg:px-4">
         {/* Logo Section - Left */}
         <div className="flex items-center">
           <Link
