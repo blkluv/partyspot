@@ -9,9 +9,9 @@ const gabarito = Gabarito({
 });
 
 export const metadata: Metadata = {
-  title: "PartySpot | Organiza el evento de tus sueños",
+  title: "PartySpot | Have Atlantic City Fun",
   description:
-    "Encontrá el lugar perfecto para tu evento, desde fiestas privadas hasta eventos sociales y corporativos. ¡Descubrí el mejor lugar para celebrar tu cumpleaños, casamiento o fiesta!",
+    "Find the perfect venue for your event, from private parties to social and corporate gatherings. Discover the best place to celebrate your birthday, wedding, or special occasion!",
   icons: {
     icon: "/favicon.svg",
     apple: "/favicon.svg"
@@ -38,7 +38,7 @@ export default function RootLayout({
         }
       }}
     >
-      <html suppressHydrationWarning lang="es" className="scroll-smooth">
+      <html suppressHydrationWarning lang="en" className="scroll-smooth">
         <body className={`${gabarito.className}`}>{children}</body>
       </html>
     </ClerkProvider>

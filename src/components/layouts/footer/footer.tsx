@@ -67,7 +67,7 @@ export default function Footer() {
         <div className="my-8 border-t border-gray-200"></div>
         <div className="mt-8 flex justify-center">
           <p className="text-sm text-gray-600">
-            ©PartySpot. Hecho en San Miguel de Tucumán, Tucumán, Argentina
+            ©ACYFUN
           </p>
         </div>
       </div>

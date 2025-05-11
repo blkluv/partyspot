@@ -14,15 +14,15 @@ export default function SignUpPage() {
         {/* Greeting */}
         <div className="mb-6 text-center">
           <h2 className="text-2xl font-bold text-gray-900">
-            Creá tu cuenta en PartySpot
+            Join the ACY FUN now
           </h2>
           <div className="mt-1 flex justify-center space-x-1 text-sm">
-            <span className="text-gray-600">¿Ya tenés una cuenta?</span>
+            <span className="text-gray-600">Already have an account?</span>
             <Link
               href="/sign-in"
               className="font-medium text-pink-600 hover:text-pink-700"
             >
-              Iniciá sesión
+              Log in
             </Link>
           </div>
         </div>
