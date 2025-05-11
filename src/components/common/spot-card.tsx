@@ -71,7 +71,7 @@ export function SpotCard({
 
         {/* Availability */}
         <div className="text-sm text-gray-500">
-          <span>Responde en el día</span>
+          <span>Responds the same day</span>
         </div>
 
         {/* Location */}

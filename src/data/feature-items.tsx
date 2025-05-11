@@ -1,4 +1,4 @@
-import { Building2, DollarSign, ShieldCheck } from "lucide-react";
+import { Camera, Ticket, ShieldCheck } from "lucide-react";
 
 export interface FeatureItemProps {
   id: number;
@@ -11,26 +11,26 @@ export interface FeatureItemProps {
 export const featureItems: FeatureItemProps[] = [
   {
     id: 1,
-    title: "Conexión sin complicaciones",
+    title: "Immersive Photo Experiences",
     description:
-      "Ponemos en contacto a anfitriones y organizadores de eventos de manera sencilla y eficiente.",
-    icon: <Building2 className="text-primary h-7 w-7" />,
-    backgroundUrl: "/images/girl-connecting.webp"
+      "Step into our themed photo booths and capture unforgettable moments in our one-of-a-kind, immersive event spaces.",
+    icon: <Camera className="text-primary h-7 w-7" />,
+    backgroundUrl: "/images/photo-booth-experience.webp"
   },
   {
     id: 2,
-    title: "Presupuestos simples",
+    title: "Customizable Packages",
     description:
-      "Con tarifas por hora claras y sin cargos sorpresa, sabrás exactamente por qué estás pagando desde el principio.",
-    icon: <DollarSign className="text-primary h-7 w-7" />,
-    backgroundUrl: "/images/good-budgets.webp"
+      "Choose from a variety of themed booths, backdrops, and props to create the perfect photo booth experience for your event.",
+    icon: <Ticket className="text-primary h-7 w-7" />,
+    backgroundUrl: "/images/custom-packages.webp"
   },
   {
     id: 3,
-    title: "Pagos seguros y garantía total",
+    title: "Secure & Hassle-Free Booking",
     description:
-      "Ofrecemos transacciones seguras y garantizamos la realización de tu evento; si no, te devolvemos el dinero.",
+      "Our booking system ensures easy and secure reservations for your event. Guaranteed fun or your money back.",
     icon: <ShieldCheck className="text-primary h-7 w-7" />,
-    backgroundUrl: "/images/secure-payments.webp"
+    backgroundUrl: "/images/secure-booking.webp"
   }
 ];

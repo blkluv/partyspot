@@ -11,10 +11,10 @@ export default function HeroSection() {
         <HeroIconList />
         <HeroText />
         {/* Accessibility */}
-        <h2 className="sr-only">Encuentra tu evento ideal</h2>
+        <h2 className="sr-only">Find your ideal event</h2>
         <div className="w-full max-w-6xl" aria-labelledby="search-heading">
           <span id="search-heading" className="sr-only">
-            Busca eventos por actividad, ubicación y fecha
+            Search events by activity, location, and date
           </span>
           {/* Mobile search field */}
           <div className="block lg:hidden">

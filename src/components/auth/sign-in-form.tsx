@@ -11,7 +11,7 @@ export default function SignInForm() {
         {/* Email Input */}
         <Clerk.Field name="identifier" className="space-y-1">
           <Clerk.Label className="block text-base text-gray-700">
-            Correo electrónico
+            Email Address
           </Clerk.Label>
           <Clerk.Input
             className="w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-400 focus:border-pink-500 focus:ring-1 focus:ring-pink-500 focus:outline-none"
@@ -25,7 +25,7 @@ export default function SignInForm() {
         {/* Password Input */}
         <Clerk.Field name="password" className="space-y-1">
           <Clerk.Label className="block text-base text-gray-700">
-            Contraseña
+            Password
           </Clerk.Label>
           <Clerk.Input
             className="w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-400 focus:border-pink-500 focus:ring-1 focus:ring-pink-500 focus:outline-none"
@@ -43,7 +43,7 @@ export default function SignInForm() {
             href="/sign-in/forgot-password"
             className="cursor-pointer text-sm font-medium text-pink-600 hover:text-pink-700"
           >
-            Olvidé mi contraseña
+            Forgot your password?
           </Link>
         </div>
 
@@ -52,7 +52,7 @@ export default function SignInForm() {
           submit
           className="w-full cursor-pointer rounded-md bg-pink-600 px-3 py-2 text-center font-medium text-white shadow-sm transition-colors hover:bg-pink-700 focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:outline-none"
         >
-          Iniciar Sesión
+          Sign In
         </SignIn.Action>
 
         {/* Social Login Options */}
@@ -62,7 +62,7 @@ export default function SignInForm() {
               <div className="w-full border-t border-gray-300" />
             </div>
             <div className="relative flex justify-center text-sm">
-              <span className="bg-white px-2 text-gray-500">Iniciar con</span>
+              <span className="bg-white px-2 text-gray-500">Sign in with</span>
             </div>
           </div>
 

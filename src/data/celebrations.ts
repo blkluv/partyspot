@@ -1,11 +1,11 @@
 import { CelebrationOption } from "@/types";
 
 export const celebrationOptions: CelebrationOption[] = [
-  { value: "wedding", label: "Boda" },
-  { value: "birthday", label: "Cumpleaños" },
-  { value: "anniversary", label: "Aniversario" },
-  { value: "graduation", label: "Graduación" },
-  { value: "corporate", label: "Evento Corporativo" },
-  { value: "baptism", label: "Bautizo" },
-  { value: "other", label: "Otro" }
+  { value: "wedding", label: "Wedding" },
+  { value: "birthday", label: "Birthday" },
+  { value: "anniversary", label: "Anniversary" },
+  { value: "graduation", label: "Graduation" },
+  { value: "corporate", label: "Corporate Event" },
+  { value: "baptism", label: "Baptism" },
+  { value: "other", label: "Other" }
 ];

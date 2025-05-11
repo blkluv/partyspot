@@ -1,29 +1,45 @@
 import { HeroSectionByIconSelected } from "@/types";
-import { House, Cake, GraduationCap, Heart } from "lucide-react";
+import { Camera, Sparkles, PartyPopper, Diamond, Music } from "lucide-react";
 
-export const heroSectionByIconSelected: HeroSectionByIconSelected[] = [
+// Extended type definition (add to your @/types file)
+interface ExtendedHeroSection extends HeroSectionByIconSelected {
+  emoji: string;
+}
+
+export const heroSectionByIconSelected: ExtendedHeroSection[] = [
   {
-    highlight: "Tu cumpleaños",
-    text: "en espacios excepcionales.",
-    icon: Cake,
-    backgroundUrl: "/under-water.webp"
+    highlight: "📸 Your Viral Moment",
+    text: "Dive into our underwater AR selfie zone 🌊 #ACYFUN",
+    icon: Camera, // Lucide icon for UI
+    emoji: "🤿", // Emoji for social sharing
+    backgroundUrl: "/atlantic-ocean-theme.webp"
   },
   {
-    highlight: "Tu fiesta",
-    text: "en ambientes exclusivos.",
-    icon: House,
-    backgroundUrl: "/pink-space.webp"
+    highlight: "🎰 Boardwalk Bash",
+    text: "Strike a pose with retro casino glam ✨♠️♥️",
+    icon: Sparkles,
+    emoji: "🎲",
+    backgroundUrl: "/golden-age-ac.webp"
   },
   {
-    highlight: "Tu logro",
-    text: "en escenarios inspiradores.",
-    icon: GraduationCap,
-    backgroundUrl: "/happy-people.webp"
+    highlight: "🎓 NFT Graduation",
+    text: "Tokenize your achievement 🏢⛓️ #BlockchainDiploma",
+    icon: PartyPopper,
+    emoji: "🧑‍🎓",
+    backgroundUrl: "/grad-cap-booth.webp"
   },
   {
-    highlight: "Sí, quiero",
-    text: "en entornos inolvidables.",
-    icon: Heart,
-    backgroundUrl: "/wedding-party.webp"
+    highlight: "💍 Jersey Shore Wedding",
+    text: "Say ‘I do’ with blockchain-preserved photos 💒⛓️",
+    icon: Diamond,
+    emoji: "👰‍♀️",
+    backgroundUrl: "/wedding-boardwalk.webp"
+  },
+  {
+    highlight: "🪩 Club Night Vibe",
+    text: "Jersey Club beats + neon photo ops 🎧🌃",
+    icon: Music,
+    emoji: "🕺",
+    backgroundUrl: "/acyfun-nightlife.webp"
   }
 ];

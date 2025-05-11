@@ -37,13 +37,13 @@ export default function FeaturedSpotsCard({
       <Link
         href={href}
         className="block"
-        aria-label={`Ver detalles de ${title}`}
+        aria-label={`View details for ${title}`}
       >
         {/* Image container with overlay */}
         <div className="relative h-[280px] w-full overflow-hidden sm:h-[350px] md:h-[400px] lg:h-[450px]">
           <Image
             src={imageUrl}
-            alt={`Imagen de ${title} - Espacio para eventos`}
+            alt={`Image of ${title} – Event space`}
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
             width={1000}
             height={1000}
@@ -60,11 +60,11 @@ export default function FeaturedSpotsCard({
           <div className="absolute top-3 right-3 z-10 flex gap-2">
             <CardActionButton
               icon={<Share className="h-4 w-4 sm:h-5 sm:w-5" />}
-              label="Compartir"
+              label="Share"
             />
             <CardActionButton
               icon={<Heart className="h-4 w-4 sm:h-5 sm:w-5" />}
-              label="Agregar a favoritos"
+              label="Add to favorites"
             />
           </div>
 
@@ -87,7 +87,7 @@ export default function FeaturedSpotsCard({
                 >
                   ${spotPrice}
                 </span>
-                <span className="text-xs font-light sm:text-sm">/hs</span>
+                <span className="text-xs font-light sm:text-sm">/hr</span>
               </div>
 
               {hasRating && (

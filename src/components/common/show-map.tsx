@@ -9,12 +9,10 @@ export const ShowMap = () => {
       <label className="group inline-flex cursor-pointer items-center gap-2">
         {/* Label text */}
         <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900">
-          Mostrar mapa
+          Show map
         </span>
 
-        <span className="sr-only">
-          {showMap ? "Ocultar mapa" : "Mostrar mapa"}
-        </span>
+        <span className="sr-only">{showMap ? "Hide map" : "Show map"}</span>
 
         {/* Toggle background */}
         <span
@@ -43,7 +41,7 @@ export const ShowMap = () => {
           className="sr-only"
           checked={showMap}
           onChange={() => setShowMap(!showMap)}
-          aria-label={showMap ? "Ocultar mapa" : "Mostrar mapa"}
+          aria-label={showMap ? "Hide map" : "Show map"}
         />
       </label>
     </div>

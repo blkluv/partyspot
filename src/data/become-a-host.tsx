@@ -2,21 +2,21 @@ import { DollarSign, Calendar, Handshake } from "lucide-react";
 
 export const features = [
   {
-    title: "Gana dinero extra",
+    title: "Earn Extra Money",
     description:
-      "Aprovecha tu espacio disponible y genera ingresos adicionales con cada reserva",
+      "Take advantage of your available space and earn extra income with each booking",
     icon: <DollarSign className="text-primary h-7 w-7" />
   },
   {
-    title: "Flexibilidad total",
+    title: "Total Flexibility",
     description:
-      "Tú decides cuándo y a quién rentar tu espacio, manteniendo siempre el control",
+      "You decide when and to whom to rent your space, always maintaining full control",
     icon: <Calendar className="text-primary h-7 w-7" />
   },
   {
-    title: "Soporte personalizado",
+    title: "Personalized Support",
     description:
-      "Te guiamos paso a paso, desde la publicación hasta tus primeras reservas",
+      "We guide you step by step, from listing to your first bookings",
     icon: <Handshake className="text-primary h-7 w-7" />
   }
 ];

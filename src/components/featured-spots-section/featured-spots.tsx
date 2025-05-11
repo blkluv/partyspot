@@ -9,16 +9,16 @@ export default function FeaturedSpotsSection() {
       <article className="container mx-auto px-4">
         <div className="mb-6 flex flex-wrap items-center justify-between gap-2 sm:mb-8">
           <h2 className="text-secondary text-lg font-bold sm:text-3xl">
-            Lugares destacados
+            Featured Places
           </h2>
           <Link
             href="/lugares"
             className="text-secondary hover:text-secondary/80 font-medium transition-colors"
-            title="Explora todos los lugares destacados"
-            aria-label="Ver todos los lugares destacados disponibles"
+            title="Explore all featured places"
+            aria-label="See all available featured places"
           >
             <span className="sm:text-md flex items-center gap-1 text-sm sm:gap-2 xl:text-lg">
-              Ver todos los lugares{" "}
+              View all places{" "}
               <ChevronRightIcon className="h-3 w-3 sm:h-4 sm:w-4" />
             </span>
           </Link>

@@ -2,52 +2,52 @@ import { PartyOption } from "@/types/party";
 
 export const partyOptions: PartyOption[] = [
   {
-    id: "boda",
-    label: "Boda",
+    id: "wedding",
+    label: "Wedding",
     icon: "💍",
     imageUrl: "/images/wedding.webp",
-    alt: "Celebración de boda"
+    alt: "Wedding celebration"
   },
   {
-    id: "comunion",
-    label: "Comunión",
+    id: "communion",
+    label: "Communion",
     icon: "🕊️",
     imageUrl: "/images/communion.webp",
-    alt: "Celebración de comunión"
+    alt: "Communion celebration"
   },
   {
-    id: "cumpleanos",
-    label: "Cumpleaños",
+    id: "birthday",
+    label: "Birthday",
     icon: "🎂",
     imageUrl: "/images/birthday.webp",
-    alt: "Fiesta de cumpleaños"
+    alt: "Birthday party"
   },
   {
-    id: "fiesta",
-    label: "Fiesta",
+    id: "party",
+    label: "Party",
     icon: "🎉",
     imageUrl: "/images/party.webp",
-    alt: "Fiesta general"
+    alt: "General party"
   },
   {
-    id: "quince",
-    label: "Quince Años",
+    id: "fifteen",
+    label: "Sweet Fifteen",
     icon: "👑",
     imageUrl: "/images/fifteen.webp",
-    alt: "Fiesta de quince años"
+    alt: "Sweet Fifteen party"
   },
   {
-    id: "musica",
-    label: "Música",
+    id: "music",
+    label: "Music",
     icon: "🎵",
     imageUrl: "/images/music.webp",
-    alt: "Evento musical"
+    alt: "Music event"
   },
   {
-    id: "asadito",
-    label: "Asadito",
+    id: "bbq",
+    label: "BBQ",
     icon: "🥩",
     imageUrl: "/images/food.webp",
-    alt: "Asado familiar"
+    alt: "Family barbecue"
   }
 ];

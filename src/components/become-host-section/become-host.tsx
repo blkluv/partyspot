@@ -13,12 +13,12 @@ export default function BecomeHostSection() {
       className="text-secondary mb-12 sm:mb-16 md:mb-20"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Encabezado de sección con markup semántico mejorado */}
+        {/* Section Header with improved semantic markup */}
         <h2
           id="become-host-heading"
           className="mb-12 flex flex-col items-center justify-center text-3xl font-bold sm:flex-row sm:gap-4 sm:text-4xl md:text-6xl"
         >
-          <span className="pb-1">¡Poné tu</span>
+          <span className="pb-1">Put your</span>
           <div className="flex items-center">
             <Image
               src="/ps-logo-text-flex.svg"
@@ -32,26 +32,26 @@ export default function BecomeHostSection() {
           </div>
         </h2>
 
-        {/* Contenedor principal - Usando componentes reutilizables */}
+        {/* Main container - Using reusable components */}
         <BackgroundCard>
           <ContentImageGrid
             imageSrc="/images/become-a-host.webp"
-            imageAlt="Persona satisfecha generando ingresos como anfitrión en PartySpot"
+            imageAlt="A satisfied person generating income as a host on PartySpot"
             imagePosition="right"
           >
             <div className="flex flex-col justify-center space-y-4 text-center">
               <div className="flex flex-col justify-center text-left">
                 <h3 className="text-2xl font-bold md:text-3xl">
-                  Tu espacio, tu fuente de ingresos
+                  Your space, your source of income
                 </h3>
                 <p className="text-lg text-gray-600">
-                  Publicá tu espacio hoy y conseguí ventas todos los meses
+                  Post your space today and start earning every month
                 </p>
               </div>
 
               <ul
                 className="space-y-4 text-left"
-                aria-label="Beneficios de ser anfitrión"
+                aria-label="Benefits of being a host"
               >
                 {features.map((feature) => (
                   <li key={feature.title}>
@@ -67,14 +67,14 @@ export default function BecomeHostSection() {
               <LinkButton
                 href="/become-host"
                 size="md"
-                aria-label="Comenzar a publicar mi espacio como anfitrión"
+                aria-label="Start posting my space as a host"
               >
-                Publicar mi espacio
+                Post my space
               </LinkButton>
               <p className="text-sm text-gray-500">
-                Sin compromisos a largo plazo. Comprobá los resultados{" "}
+                No long-term commitments. Check the results{" "}
                 <span className="font-bold text-pink-600">
-                  en menos de 15 días
+                  in less than 15 days
                 </span>
                 .
               </p>
@@ -82,14 +82,14 @@ export default function BecomeHostSection() {
           </ContentImageGrid>
         </BackgroundCard>
 
-        {/* Testimonios o información adicional con markup mejorado */}
+        {/* Testimonials or additional information with improved markup */}
         <div className="mt-16 text-center">
           <p className="text-lg font-medium text-gray-900">
-            Más de{" "}
+            More than{" "}
             <span className="font-bold text-pink-600">
-              50 hosts en Argentina
+              50 hosts in Atlantic City
             </span>{" "}
-            ya están generando ingresos con sus espacios
+            are already generating income with their spaces
           </p>
         </div>
       </div>

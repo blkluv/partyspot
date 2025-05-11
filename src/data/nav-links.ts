@@ -3,22 +3,22 @@ import { NavLink } from "@/types";
 export const navLinks: NavLink[] = [
   {
     id: "home",
-    label: "Inicio",
+    label: "Home",
     href: "/"
   },
   {
     id: "explore",
-    label: "Explorar Spots",
-    href: "/lugares"
+    label: "Explore Spots",
+    href: "/places"
   },
   {
     id: "create",
-    label: "Poné tu Party Spot",
+    label: "Add Your ACY FUN",
     href: "/create"
   },
   {
     id: "about",
-    label: "Sobre nosotros",
+    label: "About Us",
     href: "/about"
   }
 ];

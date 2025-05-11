@@ -10,11 +10,11 @@ export default function SignUpForm() {
         <div className="grid grid-cols-2 gap-3">
           <Clerk.Field name="firstName" className="space-y-1">
             <Clerk.Label className="block text-sm font-medium text-gray-700">
-              Nombre
+              First Name
             </Clerk.Label>
             <Clerk.Input
               className="w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-400 focus:border-pink-500 focus:ring-1 focus:ring-pink-500 focus:outline-none"
-              placeholder="Nombre"
+              placeholder="First Name"
               required
               autoComplete="given-name"
             />
@@ -22,11 +22,11 @@ export default function SignUpForm() {
           </Clerk.Field>
           <Clerk.Field name="lastName" className="space-y-1">
             <Clerk.Label className="block text-sm font-medium text-gray-700">
-              Apellido
+              Last Name
             </Clerk.Label>
             <Clerk.Input
               className="w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-400 focus:border-pink-500 focus:ring-1 focus:ring-pink-500 focus:outline-none"
-              placeholder="Apellido"
+              placeholder="Last Name"
               required
               autoComplete="family-name"
             />
@@ -37,7 +37,7 @@ export default function SignUpForm() {
         {/* Email field */}
         <Clerk.Field name="emailAddress" className="space-y-1">
           <Clerk.Label className="block text-sm font-medium text-gray-700">
-            Correo electrónico
+            Email Address
           </Clerk.Label>
           <Clerk.Input
             className="w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-400 focus:border-pink-500 focus:ring-1 focus:ring-pink-500 focus:outline-none"
@@ -51,7 +51,7 @@ export default function SignUpForm() {
         {/* Password field */}
         <Clerk.Field name="password" className="space-y-1">
           <Clerk.Label className="block text-sm font-medium text-gray-700">
-            Contraseña
+            Password
           </Clerk.Label>
           <Clerk.Input
             className="w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-400 focus:border-pink-500 focus:ring-1 focus:ring-pink-500 focus:outline-none"
@@ -73,19 +73,19 @@ export default function SignUpForm() {
                 className="h-4 w-4 rounded border-gray-300 text-pink-600 focus:ring-pink-500"
               />
               <label className="ml-2 block text-sm text-gray-600">
-                Acepto los{" "}
+                I accept the{" "}
                 <a
                   href="/terms"
                   className="font-medium text-pink-600 hover:text-pink-700"
                 >
-                  Términos de Servicio
+                  Terms of Service
                 </a>{" "}
-                y{" "}
+                and{" "}
                 <a
                   href="/privacy"
                   className="font-medium text-pink-600 hover:text-pink-700"
                 >
-                  Política de Privacidad
+                  Privacy Policy
                 </a>
               </label>
             </div>
@@ -98,7 +98,7 @@ export default function SignUpForm() {
           submit
           className="w-full rounded-md bg-pink-600 px-3 py-2 text-center font-medium text-white shadow-sm transition-colors hover:bg-pink-700 focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:outline-none"
         >
-          Crear cuenta
+          Create Account
         </SignUp.Action>
 
         {/* Social Login Options */}
@@ -109,7 +109,7 @@ export default function SignUpForm() {
             </div>
             <div className="relative flex justify-center text-sm">
               <span className="bg-white px-2 text-gray-500">
-                O registrate con
+                Or sign up with
               </span>
             </div>
           </div>
@@ -140,18 +140,18 @@ export default function SignUpForm() {
       {/* Verification Step */}
       <SignUp.Step name="verifications" className="space-y-4">
         <h2 className="text-xl font-semibold text-gray-900">
-          Verificá tu correo electrónico
+          Verify your email address
         </h2>
         <p className="text-sm text-gray-600">
-          Hemos enviado un código de verificación a tu correo electrónico
+          We’ve sent a verification code to your email address
         </p>
         <Clerk.Field name="code" className="space-y-1">
           <Clerk.Label className="block text-sm font-medium text-gray-700">
-            Código de verificación
+            Verification Code
           </Clerk.Label>
           <Clerk.Input
             className="w-full rounded-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-400 focus:border-pink-500 focus:ring-1 focus:ring-pink-500 focus:outline-none"
-            placeholder="Código de 6 dígitos"
+            placeholder="6-digit code"
             maxLength={6}
             pattern="\d{6}"
             inputMode="numeric"
@@ -164,13 +164,13 @@ export default function SignUpForm() {
             submit
             className="w-full rounded-md bg-pink-600 px-3 py-2 text-center font-medium text-white shadow-sm transition-colors hover:bg-pink-700 focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:outline-none"
           >
-            Verificar email
+            Verify Email
           </SignUp.Action>
           <button
             type="button"
             className="text-center text-sm font-medium text-pink-600 hover:text-pink-700"
           >
-            Reenviar código
+            Resend Code
           </button>
         </div>
       </SignUp.Step>

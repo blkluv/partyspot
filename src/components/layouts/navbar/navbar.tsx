@@ -53,10 +53,10 @@ const Navbar: React.FC<NavbarProps> = ({ className = "", children }) => {
         <div className="flex items-center justify-end gap-2">
           <SignedOut>
             <SignInButton mode="modal">
-              <button className="navbar-link">Iniciar sesión</button>
+              <button className="navbar-link">Sign In</button>
             </SignInButton>
             <SignUpButton mode="modal">
-              <button className="navbar-link-active">Registrarse</button>
+              <button className="navbar-link-active">Sign Up</button>
             </SignUpButton>
           </SignedOut>
           <SignedIn>

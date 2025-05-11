@@ -11,7 +11,7 @@ export default function LeftSideImage() {
     <div className="relative h-full w-full">
       <Image
         src={selectedBackgroundUrl || "/images/girl-connecting.webp"}
-        alt="PartySpot"
+        alt="ACY FUN"
         fill
         className="object-cover"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
